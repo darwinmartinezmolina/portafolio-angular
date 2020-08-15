@@ -24,6 +24,7 @@ export class ProductosService {
           console.log(resp);
           this.productos = resp;
           resolve();
+          this.cargando = false;
         });
     });
 
